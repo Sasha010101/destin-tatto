@@ -1,3 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+  height: 68px;
+  padding-inline: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #00000099;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > button.burger_menu {
+}
+header > button.burger_menu > img {
+  width: 27px;
+  height: 18px;
+}
+header > a.header_logo {
+  width: 64px;
+  height: 64px;
+}
+header > button.book_button {
+  outline: solid 1px #000a2f;
+  padding: 11px 17px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #dcdde4;
+  letter-spacing: 0.04em;
+}
